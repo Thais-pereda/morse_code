@@ -55,7 +55,7 @@ text = sys.argv[1:]
 
 text = " ".join(text)
 
-morse_text = [morse_code[char] for char in text]
+morse_text = [morse_code[char.lower()] for char in text]
 
 final_text = "".join(morse_text)
 
